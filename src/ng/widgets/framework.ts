@@ -1,7 +1,17 @@
-import type { Context } from "../core";
+import { Context } from "../core";
 import { ImplementationError } from "../exceptions";
 
 export class Widget {
+  #context: Context | null = null;
+
+  get context(): Context | null {
+    return this.#context;
+  }
+
+  set context(context: Context) {
+    this.#context = context;
+  }
+
   build(_context: Context): HTMLElement | Widget {
     throw ImplementationError;
   }

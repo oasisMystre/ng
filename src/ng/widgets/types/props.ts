@@ -1,4 +1,4 @@
-import { Style } from "../Style";
+import { Style } from "../style";
 import { View, Widget } from "../framework";
 
 export type PropsWithChildren = {
@@ -6,5 +6,5 @@ export type PropsWithChildren = {
 };
 
 export type PropsWithStyle = {
-  style: Style;
+  style?: Style;
 };

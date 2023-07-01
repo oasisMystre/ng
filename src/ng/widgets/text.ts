@@ -1,4 +1,4 @@
-import { Style, setStyle } from "./Style";
+import { Style, setStyle } from "./style";
 import { View } from "./framework";
 
 export type TextProps = {

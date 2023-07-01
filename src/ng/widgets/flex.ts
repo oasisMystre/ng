@@ -1,7 +1,7 @@
 import type { Context } from "../core";
 import type { PropsWithChildren, PropsWithStyle } from "./types/props";
 
-import { setStyle } from "./Style";
+import { setStyle } from "./style";
 import { renderWidget } from "./utils";
 import { View, Widget } from "./framework";
 

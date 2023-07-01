@@ -12,7 +12,7 @@ export type AppBarProps = {
 export class AppBar extends Widget {
   private props: AppBarProps;
 
-  constructor(props: AppBarProps) {
+  constructor(props: AppBarProps = {}) {
     super();
 
     this.props = props;
@@ -37,7 +37,7 @@ export class AppBar extends Widget {
       style: {
         position: "sticky",
         top: "0",
-        borderBottom: "1px"
+        borderBottom: "1px",
       },
     });
   }

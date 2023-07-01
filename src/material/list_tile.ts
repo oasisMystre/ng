@@ -2,9 +2,9 @@ import { View, Widget } from "../ng/widgets/framework";
 import { Column, Expanded, Row } from "../ng/widgets/flex";
 
 export type ListTileProps = {
-  leading: Widget | View | null;
-  title: Widget | View | null;
-  subtitle: Widget | View | null;
+  leading?: Widget | View;
+  title?: Widget | View;
+  subtitle?: Widget | View;
 };
 
 export class ListTile extends Widget {
@@ -28,12 +28,12 @@ export class ListTile extends Widget {
       if (this.props.subtitle) fillChildren.push(this.props.subtitle);
 
       children.push(
-        new Expanded({
-          child: new Column({
+        new Expanded(
+          new Column({
             children: fillChildren,
             style: {},
           }),
-        })
+        )
       );
     }
 

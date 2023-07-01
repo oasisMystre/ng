@@ -23,6 +23,7 @@ export class Scaffold extends View {
     setStyle(container, {
       position: "fixed",
       "top,bottom,left,right": 0,
+      overflow: "scroll",
     });
 
     renderWidget(context, container, this.props.body);
